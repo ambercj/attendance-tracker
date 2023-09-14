@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefWidth="387.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane prefHeight="425.0" prefWidth="381.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="9.0" layoutY="11.0" text="Amber Cheng">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="25.0" text="UIN: 131009185">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="39.0" text="email: ambercj@tamu.edu">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" layoutX="24.0" layoutY="383.0" mnemonicParsing="false" onAction="#close_program" text="Exit">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="log_button" layoutX="18.0" layoutY="135.0" mnemonicParsing="false" onAction="#log_button_pressed" text="Load Log">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="roster_button" layoutX="79.0" layoutY="135.0" mnemonicParsing="false" onAction="#roster_button_pressed" text="Load Roster">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <TextField fx:id="user_input" layoutX="18.0" layoutY="95.0" prefHeight="17.0" prefWidth="173.0" promptText="Enter Here">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextField>
+            <Button fx:id="submit" layoutX="204.0" layoutY="94.0" mnemonicParsing="false" onAction="#get_input" text="Submit">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="menu" layoutX="262.0" layoutY="91.0" mnemonicParsing="false" text="Menu Options">
+              <items>
+                <MenuItem fx:id="optionB" mnemonicParsing="false" onAction="#B" text="B - print_collection()" />
+                  <MenuItem fx:id="optionC" mnemonicParsing="false" onAction="#C" text="C - print_count()" />
+                  <MenuItem fx:id="optionE" mnemonicParsing="false" onAction="#E" text="E - print_collection()" />
+                  <MenuItem fx:id="optionF" mnemonicParsing="false" onAction="#F" text="F - print_count()" />
+                  <MenuItem fx:id="optionG" mnemonicParsing="false" onAction="#G" text="G - list_students_not_in_class()" />
+                  <MenuItem fx:id="optionH" mnemonicParsing="false" onAction="#H" text="H - list_all_times_checking_in_and_out()" />
+                  <MenuItem fx:id="optionI" mnemonicParsing="false" onAction="#I" text="I - list_all_times_checked_in()" />
+                  <MenuItem fx:id="optionJ" mnemonicParsing="false" onAction="#J" text="J - list_students_late_to_class()" />
+                  <MenuItem fx:id="optionK" mnemonicParsing="false" onAction="#K" text="K - get_first_student_to_enter()" />
+                  <MenuItem fx:id="optionL" mnemonicParsing="false" onAction="#L" text="L - print_attendance_data_for_student()" />
+                  <MenuItem fx:id="optionM" mnemonicParsing="false" onAction="#M" text="M - is_present()" />
+                  <MenuItem fx:id="optionN" mnemonicParsing="false" onAction="#N" text="N - list_all_students_checked_in()" />
+                  <MenuItem fx:id="optionO" mnemonicParsing="false" onAction="#O" text="O - list_all_students_checked_in_before()" />
+                  <MenuItem fx:id="optionP" mnemonicParsing="false" onAction="#P" text="P - list_students_attendance_count()" />
+                  <MenuItem fx:id="optionQ" mnemonicParsing="false" onAction="#Q" text="Q - get_first_student_to_enter()" />
+                  <MenuItem fx:id="optionR" mnemonicParsing="false" onAction="#R" text="R - print_query_list()" />
+                  <MenuItem fx:id="optionS" mnemonicParsing="false" onAction="#S" text="S - print_count()" />
+              </items>
+            </MenuButton>
+            <TextArea fx:id="text_area" layoutX="18.0" layoutY="174.0" prefHeight="200.0" prefWidth="252.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="instruction" layoutX="17.0" layoutY="66.0" text="Welcome!">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="23.0" text="Valid?" />
+            <Label fx:id="valid" layoutX="307.0" layoutY="46.0" text="no">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="first" layoutX="294.0" layoutY="132.0" prefHeight="15.0" prefWidth="73.0" promptText="first name">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="last" layoutX="294.0" layoutY="198.0" prefHeight="15.0" prefWidth="73.0" promptText="last name">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="date" layoutX="294.0" layoutY="259.0" prefHeight="15.0" prefWidth="73.0" promptText="date">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="attendance_count" layoutX="293.0" layoutY="367.0" prefHeight="15.0" prefWidth="73.0" promptText="attendance count">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </TextField>
+            <Button fx:id="submit1" layoutX="293.0" layoutY="153.0" mnemonicParsing="false" onAction="#first_name_enter" text="Submit">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <Button fx:id="submit2" layoutX="294.0" layoutY="221.0" mnemonicParsing="false" onAction="#last_name_enter" text="Submit">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <Button fx:id="submit3" layoutX="295.0" layoutY="285.0" mnemonicParsing="false" onAction="#date_enter" text="Submit">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <Button fx:id="submit5" layoutX="294.0" layoutY="397.0" mnemonicParsing="false" onAction="#attendance_enter" text="Submit">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <TextField fx:id="time" layoutX="293.0" layoutY="315.0" prefHeight="15.0" prefWidth="73.0" promptText="time">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </TextField>
+            <Button fx:id="submit4" layoutX="292.0" layoutY="337.0" mnemonicParsing="false" onAction="#time_enter" text="Submit">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
